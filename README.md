@@ -17,4 +17,4 @@ Reddit credentials are stored in the keychain as raw username/passwords, and it'
 If you want to ship this in a commercial app, you also need to sign up with [Mashape](https://www.mashape.com/imgur/apiv3), who meter Imgur's API usage.
 Their free plan allows 1250 free uploads per day, and after that it's 1¢ per 10 uploads.
 
-Questions / suggestions welcome, but having shipped this it is not a super high-priority project for me.
+Questions / suggestions welcome, but gotten this to where I need it for [my app](http://chunkyreader.com) it's not a super high-priority project for me.
