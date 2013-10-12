@@ -47,8 +47,8 @@ static NSString *kSTRDefaultsLastUser = @"ShareToReddit_lastUser";
 			return;
 		}
 
-		int statusCode = ((NSHTTPURLResponse*)response).statusCode;
-		completion( statusCode, data, nil );
+		NSInteger statusCode = ((NSHTTPURLResponse*)response).statusCode;
+		completion( (int)statusCode, data, nil );
 	}];
 }
 

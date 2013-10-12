@@ -17,17 +17,17 @@
 		77C723ED1809BBED00F08E40 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723D61809BBED00F08E40 /* NSData+Base64.m */; };
 		77C723EE1809BBED00F08E40 /* reddit7.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C723D71809BBED00F08E40 /* reddit7.png */; };
 		77C723EF1809BBED00F08E40 /* reddit7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C723D81809BBED00F08E40 /* reddit7@2x.png */; };
-		77C723F01809BBED00F08E40 /* ShareToRedditActivity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723DA1809BBED00F08E40 /* ShareToRedditActivity.mm */; };
-		77C723F11809BBED00F08E40 /* ShareToRedditController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723DC1809BBED00F08E40 /* ShareToRedditController.mm */; };
-		77C723F21809BBED00F08E40 /* STRComposeController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723DE1809BBED00F08E40 /* STRComposeController.mm */; };
+		77C723F01809BBED00F08E40 /* ShareToRedditActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723DA1809BBED00F08E40 /* ShareToRedditActivity.m */; };
+		77C723F11809BBED00F08E40 /* ShareToRedditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723DC1809BBED00F08E40 /* ShareToRedditController.m */; };
+		77C723F21809BBED00F08E40 /* STRComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723DE1809BBED00F08E40 /* STRComposeController.m */; };
 		77C723F31809BBED00F08E40 /* STRComposeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C723DF1809BBED00F08E40 /* STRComposeController.xib */; };
-		77C723F41809BBED00F08E40 /* STRImgur.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E11809BBED00F08E40 /* STRImgur.mm */; };
-		77C723F51809BBED00F08E40 /* STRSession+Cookies.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E21809BBED00F08E40 /* STRSession+Cookies.mm */; };
-		77C723F61809BBED00F08E40 /* STRSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E41809BBED00F08E40 /* STRSession.mm */; };
-		77C723F71809BBED00F08E40 /* STRSubmitController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E61809BBED00F08E40 /* STRSubmitController.mm */; };
+		77C723F41809BBED00F08E40 /* STRImgur.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E11809BBED00F08E40 /* STRImgur.m */; };
+		77C723F51809BBED00F08E40 /* STRSession+Cookies.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E21809BBED00F08E40 /* STRSession+Cookies.m */; };
+		77C723F61809BBED00F08E40 /* STRSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E41809BBED00F08E40 /* STRSession.m */; };
+		77C723F71809BBED00F08E40 /* STRSubmitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E61809BBED00F08E40 /* STRSubmitController.m */; };
 		77C723F81809BBED00F08E40 /* STRSubmitController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C723E71809BBED00F08E40 /* STRSubmitController.xib */; };
-		77C723F91809BBED00F08E40 /* STRSubredditController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E91809BBED00F08E40 /* STRSubredditController.mm */; };
-		77C723FA1809BBED00F08E40 /* STRUserController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77C723EB1809BBED00F08E40 /* STRUserController.mm */; };
+		77C723F91809BBED00F08E40 /* STRSubredditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723E91809BBED00F08E40 /* STRSubredditController.m */; };
+		77C723FA1809BBED00F08E40 /* STRUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C723EB1809BBED00F08E40 /* STRUserController.m */; };
 		77C723FB1809BBED00F08E40 /* STRUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C723EC1809BBED00F08E40 /* STRUserController.xib */; };
 /* End PBXBuildFile section */
 
@@ -49,24 +49,24 @@
 		77C723D71809BBED00F08E40 /* reddit7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddit7.png; sourceTree = "<group>"; };
 		77C723D81809BBED00F08E40 /* reddit7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reddit7@2x.png"; sourceTree = "<group>"; };
 		77C723D91809BBED00F08E40 /* ShareToRedditActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareToRedditActivity.h; sourceTree = "<group>"; };
-		77C723DA1809BBED00F08E40 /* ShareToRedditActivity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShareToRedditActivity.mm; sourceTree = "<group>"; };
+		77C723DA1809BBED00F08E40 /* ShareToRedditActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareToRedditActivity.m; sourceTree = "<group>"; };
 		77C723DB1809BBED00F08E40 /* ShareToRedditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareToRedditController.h; sourceTree = "<group>"; };
-		77C723DC1809BBED00F08E40 /* ShareToRedditController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShareToRedditController.mm; sourceTree = "<group>"; };
+		77C723DC1809BBED00F08E40 /* ShareToRedditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareToRedditController.m; sourceTree = "<group>"; };
 		77C723DD1809BBED00F08E40 /* STRComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRComposeController.h; sourceTree = "<group>"; };
-		77C723DE1809BBED00F08E40 /* STRComposeController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STRComposeController.mm; sourceTree = "<group>"; };
+		77C723DE1809BBED00F08E40 /* STRComposeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRComposeController.m; sourceTree = "<group>"; };
 		77C723DF1809BBED00F08E40 /* STRComposeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRComposeController.xib; sourceTree = "<group>"; };
 		77C723E01809BBED00F08E40 /* STRImgur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRImgur.h; sourceTree = "<group>"; };
-		77C723E11809BBED00F08E40 /* STRImgur.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STRImgur.mm; sourceTree = "<group>"; };
-		77C723E21809BBED00F08E40 /* STRSession+Cookies.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "STRSession+Cookies.mm"; sourceTree = "<group>"; };
+		77C723E11809BBED00F08E40 /* STRImgur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRImgur.m; sourceTree = "<group>"; };
+		77C723E21809BBED00F08E40 /* STRSession+Cookies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STRSession+Cookies.m"; sourceTree = "<group>"; };
 		77C723E31809BBED00F08E40 /* STRSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRSession.h; sourceTree = "<group>"; };
-		77C723E41809BBED00F08E40 /* STRSession.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STRSession.mm; sourceTree = "<group>"; };
+		77C723E41809BBED00F08E40 /* STRSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRSession.m; sourceTree = "<group>"; };
 		77C723E51809BBED00F08E40 /* STRSubmitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRSubmitController.h; sourceTree = "<group>"; };
-		77C723E61809BBED00F08E40 /* STRSubmitController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STRSubmitController.mm; sourceTree = "<group>"; };
+		77C723E61809BBED00F08E40 /* STRSubmitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRSubmitController.m; sourceTree = "<group>"; };
 		77C723E71809BBED00F08E40 /* STRSubmitController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRSubmitController.xib; sourceTree = "<group>"; };
 		77C723E81809BBED00F08E40 /* STRSubredditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRSubredditController.h; sourceTree = "<group>"; };
-		77C723E91809BBED00F08E40 /* STRSubredditController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STRSubredditController.mm; sourceTree = "<group>"; };
+		77C723E91809BBED00F08E40 /* STRSubredditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRSubredditController.m; sourceTree = "<group>"; };
 		77C723EA1809BBED00F08E40 /* STRUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRUserController.h; sourceTree = "<group>"; };
-		77C723EB1809BBED00F08E40 /* STRUserController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STRUserController.mm; sourceTree = "<group>"; };
+		77C723EB1809BBED00F08E40 /* STRUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRUserController.m; sourceTree = "<group>"; };
 		77C723EC1809BBED00F08E40 /* STRUserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRUserController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,24 +143,24 @@
 				77C723D71809BBED00F08E40 /* reddit7.png */,
 				77C723D81809BBED00F08E40 /* reddit7@2x.png */,
 				77C723D91809BBED00F08E40 /* ShareToRedditActivity.h */,
-				77C723DA1809BBED00F08E40 /* ShareToRedditActivity.mm */,
+				77C723DA1809BBED00F08E40 /* ShareToRedditActivity.m */,
 				77C723DB1809BBED00F08E40 /* ShareToRedditController.h */,
-				77C723DC1809BBED00F08E40 /* ShareToRedditController.mm */,
+				77C723DC1809BBED00F08E40 /* ShareToRedditController.m */,
 				77C723DD1809BBED00F08E40 /* STRComposeController.h */,
-				77C723DE1809BBED00F08E40 /* STRComposeController.mm */,
+				77C723DE1809BBED00F08E40 /* STRComposeController.m */,
 				77C723DF1809BBED00F08E40 /* STRComposeController.xib */,
 				77C723E01809BBED00F08E40 /* STRImgur.h */,
-				77C723E11809BBED00F08E40 /* STRImgur.mm */,
-				77C723E21809BBED00F08E40 /* STRSession+Cookies.mm */,
+				77C723E11809BBED00F08E40 /* STRImgur.m */,
+				77C723E21809BBED00F08E40 /* STRSession+Cookies.m */,
 				77C723E31809BBED00F08E40 /* STRSession.h */,
-				77C723E41809BBED00F08E40 /* STRSession.mm */,
+				77C723E41809BBED00F08E40 /* STRSession.m */,
 				77C723E51809BBED00F08E40 /* STRSubmitController.h */,
-				77C723E61809BBED00F08E40 /* STRSubmitController.mm */,
+				77C723E61809BBED00F08E40 /* STRSubmitController.m */,
 				77C723E71809BBED00F08E40 /* STRSubmitController.xib */,
 				77C723E81809BBED00F08E40 /* STRSubredditController.h */,
-				77C723E91809BBED00F08E40 /* STRSubredditController.mm */,
+				77C723E91809BBED00F08E40 /* STRSubredditController.m */,
 				77C723EA1809BBED00F08E40 /* STRUserController.h */,
-				77C723EB1809BBED00F08E40 /* STRUserController.mm */,
+				77C723EB1809BBED00F08E40 /* STRUserController.m */,
 				77C723EC1809BBED00F08E40 /* STRUserController.xib */,
 			);
 			name = ShareToReddit;
@@ -234,17 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C723F91809BBED00F08E40 /* STRSubredditController.mm in Sources */,
-				77C723F41809BBED00F08E40 /* STRImgur.mm in Sources */,
-				77C723F51809BBED00F08E40 /* STRSession+Cookies.mm in Sources */,
-				77C723F61809BBED00F08E40 /* STRSession.mm in Sources */,
-				77C723F21809BBED00F08E40 /* STRComposeController.mm in Sources */,
-				77C723F11809BBED00F08E40 /* ShareToRedditController.mm in Sources */,
+				77C723F91809BBED00F08E40 /* STRSubredditController.m in Sources */,
+				77C723F41809BBED00F08E40 /* STRImgur.m in Sources */,
+				77C723F51809BBED00F08E40 /* STRSession+Cookies.m in Sources */,
+				77C723F61809BBED00F08E40 /* STRSession.m in Sources */,
+				77C723F21809BBED00F08E40 /* STRComposeController.m in Sources */,
+				77C723F11809BBED00F08E40 /* ShareToRedditController.m in Sources */,
 				77C723D31809B80200F08E40 /* PhotoVC.m in Sources */,
-				77C723FA1809BBED00F08E40 /* STRUserController.mm in Sources */,
-				77C723F71809BBED00F08E40 /* STRSubmitController.mm in Sources */,
+				77C723FA1809BBED00F08E40 /* STRUserController.m in Sources */,
+				77C723F71809BBED00F08E40 /* STRSubmitController.m in Sources */,
 				77C723ED1809BBED00F08E40 /* NSData+Base64.m in Sources */,
-				77C723F01809BBED00F08E40 /* ShareToRedditActivity.mm in Sources */,
+				77C723F01809BBED00F08E40 /* ShareToRedditActivity.m in Sources */,
 				77C723B31809B7A600F08E40 /* AppDelegate.m in Sources */,
 				77C723AF1809B7A600F08E40 /* main.m in Sources */,
 			);
@@ -383,6 +383,7 @@
 				77C723CD1809B7A600F08E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

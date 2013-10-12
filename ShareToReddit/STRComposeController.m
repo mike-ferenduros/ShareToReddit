@@ -121,7 +121,7 @@
 
 - (void)textViewDidChange:(UITextView *)textView
 {
-	int remaining = 300 - textView.text.length;
+	int remaining = 300 - (int)textView.text.length;
 	self.charCount.text = [NSString stringWithFormat:@"%d",remaining];
 
 	if( remaining < 0 )

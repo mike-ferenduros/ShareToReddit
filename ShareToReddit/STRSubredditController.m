@@ -39,7 +39,7 @@
 	if( self = [super initWithStyle:UITableViewStylePlain] )
 	{
 		sesh = session;
-		self.contentSizeForViewInPopover = CGSizeMake(300,200);
+		self.preferredContentSize = CGSizeMake(300,200);
 	}
     return self;
 }

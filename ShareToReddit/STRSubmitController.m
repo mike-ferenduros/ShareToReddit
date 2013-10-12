@@ -88,7 +88,8 @@
 		{
 			if( data )
 			{
-				if( UIImage *img = [UIImage imageWithData:data] )
+				UIImage *img = [UIImage imageWithData:data];
+				if( img )
 				{
 					if( !self.captchaView.hidden )
 					{
