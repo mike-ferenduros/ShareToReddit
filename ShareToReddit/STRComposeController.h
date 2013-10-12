@@ -1,6 +1,6 @@
 //
 //  ShareToRedditComposeController.h
-//  Chunky Comic Reader
+//  ShareToReddit
 //
 //  Created by Michael Ferenduros on 01/10/2013.
 //  Copyright (c) 2013 Michael Ferenduros. All rights reserved.

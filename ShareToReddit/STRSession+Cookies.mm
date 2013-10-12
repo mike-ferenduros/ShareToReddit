@@ -1,6 +1,6 @@
 //
 //  STRSession+Cookies.m
-//  Chunky Comic Reader
+//  ShareToReddit
 //
 //  Created by Michael Ferenduros on 30/09/2013.
 //  Copyright (c) 2013 Michael Ferenduros. All rights reserved.
