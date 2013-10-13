@@ -56,12 +56,12 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"user"];
 
 	NSString *user = users[indexPath.row];
-	if( sesh.isLoggedIn && [user.lowercaseString isEqualToString:sesh.userName] )
+	if( [sesh isLoggedInAs:user] )
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
 	else
 		cell.accessoryType = UITableViewCellAccessoryNone;
 
-	cell.textLabel.text = users[indexPath.row];
+	cell.textLabel.text = user;
 
 	return cell;
 }
