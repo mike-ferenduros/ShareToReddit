@@ -10,7 +10,8 @@
 #import "STRSession.h"
 #import "NSData+Base64.h"
 
-//#error You need a client ID from Imgur. Get one at http://api.imgur.com/oauth2/addclient and add it below
+#error You need a client ID from Imgur.
+//Get a Client ID at http://api.imgur.com/#register and add it below, then comment out this error
 static NSString *kImgurAuth = @"Client-ID YOUR_IMGUR_CLIENT_ID";
 
 //If you're using the commercial API, sign up at mashape.com, create a key and set it here.

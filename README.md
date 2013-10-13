@@ -3,9 +3,9 @@ ShareToReddit
 
 An iOS UIActivity for posting an image to Reddit. See the demo app for basic usage.
 
-To use this you need an Imgur API key. Go to [api.imgur.com](http://api.imgur.com) and look for the 'register' link, and once you get your Client ID, build the example app and you'll get an error telling you where to enter it.
+To use this you need an Imgur API key. Go to [api.imgur.com/#register](http://api.imgur.com/#register) and follow the 'register' link, and once you get your Client ID, build the example app and you'll get an error telling you where to enter it.
 
-Or if you just want to test-drive the UI, leave garbage in for the Imgur the client-ID and it'll mostly work but fail to actually post.
+Or if you just want to test-drive the UI, leave garbage in for the client-ID and it'll mostly work but fail to actually post.
 
 Right now this is limited to what I needed from it:
  - iOS7 only
@@ -16,7 +16,7 @@ Right now this is limited to what I needed from it:
 None of the above should be particularly hard to fix.
 
 Features:
- - Reddit credentials are stored in the keychain (as a username+cookie), and the user can add several several for fast switching between alts.
+ - Reddit credentials are stored in the keychain (as a username+cookie), and the user can add several for fast switching between alts.
  - Captchas handled for low-karma posters
  - You can supply a list of suggested subreddits to post to, plus the UI will present the most recently used ones.
  - NSFW flagging
