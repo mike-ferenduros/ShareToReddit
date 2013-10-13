@@ -3,6 +3,8 @@ ShareToReddit
 
 An iOS UIActivity for posting an image to Reddit. See the demo app for basic usage.
 
+![ShareToReddit UI](http://i.imgur.com/KVR3fiC.png)
+
 To use this you need an Imgur API key. Go to [api.imgur.com/#register](http://api.imgur.com/#register) and follow the 'register' link, and once you get your Client ID, build the example app and you'll get an error telling you where to enter it.
 
 Or if you just want to test-drive the UI, leave garbage in for the client-ID and it'll mostly work but fail to actually post.
