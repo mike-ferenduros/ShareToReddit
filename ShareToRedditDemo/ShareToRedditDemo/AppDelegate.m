@@ -13,13 +13,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+	self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
 
 	PhotoVC *vc = [[PhotoVC alloc] init];
 	self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
 
-    [self.window makeKeyAndVisible];
-    return YES;
+	[self.window makeKeyAndVisible];
+	return YES;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application

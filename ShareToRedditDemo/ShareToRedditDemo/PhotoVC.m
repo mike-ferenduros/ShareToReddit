@@ -26,13 +26,18 @@
 	return (UIImageView*)self.view;
 }
 
-- (void)showPopover:(UIViewController*)vc fromBBI:(UIBarButtonItem*)bbi
+- (void)hidePopover
 {
 	if( popover )
 	{
 		[popover dismissPopoverAnimated:NO];
 		popover = nil;
 	}
+}
+
+- (void)showPopover:(UIViewController*)vc fromBBI:(UIBarButtonItem*)bbi
+{
+	[self hidePopover];
 	if( vc )
 	{
 		popover = [[UIPopoverController alloc] initWithContentViewController:vc];
@@ -52,11 +57,11 @@
 	UIImage *img = info[UIImagePickerControllerEditedImage] ?: info[UIImagePickerControllerOriginalImage];
 	self.imageView.image = img;
 	self.navigationItem.rightBarButtonItem.enabled = img!=nil;
-	[self showPopover:nil fromBBI:nil];
+	[self hidePopover];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-	[self showPopover:nil fromBBI:nil];
+	[self hidePopover];
 }
 
 - (void)share:(UIBarButtonItem*)sender

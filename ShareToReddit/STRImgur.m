@@ -124,11 +124,12 @@ static NSString *kImgurAuth = @"Client-ID YOUR_IMGUR_CLIENT_ID";
 
 	NSString *img64 = [STRSession urlEncode:imgData.base64EncodedString];
 	imgData = nil;
+
 	NSString *body = [@"type=base64&image=" stringByAppendingString:img64];
 	img64 = nil;
 
 	req.HTTPBody = [body dataUsingEncoding:NSUTF8StringEncoding];
-
+	body = nil;
 
 	STRImgurUploader *uploader = [[STRImgurUploader alloc] initWithProgress:progress completion:completion];
 
