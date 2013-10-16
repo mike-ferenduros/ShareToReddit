@@ -119,7 +119,7 @@ static NSString *kImgurAuth = @"Client-ID YOUR_IMGUR_CLIENT_ID";
 	[req setValue:kImgurAuth forHTTPHeaderField:@"Authorization"];
 
 	#ifdef MASHAPE_KEY
-	[req setValue:kMashapeKey forHTTPHeaderField:@"X-Mashape-Authorization"];
+	[req setValue:MASHAPE_KEY forHTTPHeaderField:@"X-Mashape-Authorization"];
 	#endif
 
 	NSString *img64 = [STRSession urlEncode:imgData.base64EncodedString];
