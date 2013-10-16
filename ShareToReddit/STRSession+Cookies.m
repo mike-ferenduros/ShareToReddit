@@ -29,7 +29,7 @@ static NSString *kSTRKeychainService = @"ShareToReddit";
 	OSStatus err = SecItemCopyMatching( (__bridge CFDictionaryRef)query, (CFTypeRef*)(&result) );
 	if( err == errSecSuccess )
 	{
-		NSData *data = (__bridge NSData*)result;
+		NSData *data = (__bridge_transfer NSData*)result;
 		return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	}
 	else
@@ -78,7 +78,7 @@ static NSString *kSTRKeychainService = @"ShareToReddit";
 	OSStatus err = SecItemCopyMatching( (__bridge CFDictionaryRef)query, (CFTypeRef*)(&result) );
 	if( err == errSecSuccess )
 	{
-		NSArray *items = (__bridge NSArray*)result;
+		NSArray *items = (__bridge_transfer NSArray*)result;
 		NSMutableArray *users = [NSMutableArray arrayWithCapacity:items.count];
 		for( NSDictionary *item in items )
 		{
