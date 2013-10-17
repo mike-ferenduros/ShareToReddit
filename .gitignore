@@ -4,3 +4,7 @@ ShareToRedditDemo/ShareToRedditDemo.xcodeproj/project.xcworkspace/xcuserdata/mik
 ShareToRedditDemo/ShareToRedditDemo.xcodeproj/xcuserdata/mikef.xcuserdatad/xcschemes/ShareToRedditDemo.xcscheme
 
 ShareToRedditDemo/ShareToRedditDemo.xcodeproj/xcuserdata/mikef.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xccheckout
+
+*.xcbkptlist

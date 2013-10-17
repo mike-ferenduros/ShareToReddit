@@ -217,7 +217,7 @@
 		[self.progress setProgress:0.5f animated:YES];
 		[self submitLink];
 	}
-	if( self.postImage )
+	else if( self.postImage )
 	{
 		[self.progress setProgress:0.1f animated:YES];
 		[self uploadImage];

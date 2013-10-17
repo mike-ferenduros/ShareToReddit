@@ -6,16 +6,10 @@
 //  Copyright (c) 2013 Michael Ferenduros. All rights reserved.
 //
 
+#import "ShareToRedditController.h"
 #import "STRImgur.h"
 #import "STRSession.h"
 #import "NSData+Base64.h"
-
-#error You need a client ID from Imgur.
-//Get a Client ID at http://api.imgur.com/#register and add it below, then comment out this error
-static NSString *kImgurAuth = @"Client-ID YOUR_IMGUR_CLIENT_ID";
-
-//If you're using the commercial API, sign up at mashape.com, create a key and set it here.
-//#define MASHAPE_KEY @"stringofgibberishhere"
 
 
 
@@ -106,21 +100,18 @@ static NSString *kImgurAuth = @"Client-ID YOUR_IMGUR_CLIENT_ID";
 		return;
 	}
 
-	#ifdef MASHAPE_KEY
-	NSString *apiBase = @"https://imgur-apiv3.p.mashape.com/";
-	#else
-	NSString *apiBase = @"https://api.imgur.com/";
-	#endif
+	NSString *mashapeKey = ShareToRedditController.mashapeKey;
+	NSString *apiBase = mashapeKey ? @"https://imgur-apiv3.p.mashape.com/" : @"https://api.imgur.com/";
 
 	NSURL *url = [NSURL URLWithString:[apiBase stringByAppendingString:@"3/image"]];
 	NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
 	req.HTTPMethod = @"POST";
 
-	[req setValue:kImgurAuth forHTTPHeaderField:@"Authorization"];
+	NSString *imgurAuth = [@"Client-ID " stringByAppendingString:ShareToRedditController.imgurClientID];
+	[req setValue:imgurAuth forHTTPHeaderField:@"Authorization"];
 
-	#ifdef MASHAPE_KEY
-	[req setValue:MASHAPE_KEY forHTTPHeaderField:@"X-Mashape-Authorization"];
-	#endif
+	if( mashapeKey )
+		[req setValue:mashapeKey forHTTPHeaderField:@"X-Mashape-Authorization"];
 
 	NSString *img64 = [STRSession urlEncode:imgData.base64EncodedString];
 	imgData = nil;

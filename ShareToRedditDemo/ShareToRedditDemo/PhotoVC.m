@@ -15,10 +15,9 @@
 {
 	self.view = [[UIImageView alloc] init];
 	self.view.contentMode = UIViewContentModeScaleAspectFit;
+	self.view.backgroundColor = [UIColor blackColor];
 
-	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(pick:)];
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
-	self.navigationItem.rightBarButtonItem.enabled = NO;
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(pick:)];
 }
 
 - (UIImageView*)imageView
@@ -56,7 +55,8 @@
 {
 	UIImage *img = info[UIImagePickerControllerEditedImage] ?: info[UIImagePickerControllerOriginalImage];
 	self.imageView.image = img;
-	self.navigationItem.rightBarButtonItem.enabled = img!=nil;
+	if( img )
+		self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share:)];
 	[self hidePopover];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

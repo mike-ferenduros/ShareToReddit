@@ -100,19 +100,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	if( self.rootCon.image )
-	{
-		self.imgView.image = self.rootCon.image;
-	}
-	else if( self.rootCon.url )
-	{
-		//Umm...dunno.
-		//Set a generic compass icon here?
-		//Fetch the HTML, look for an appropriate image and load that?
-		//Special-case image-loader for known URLs (imgur, youtube etc)?
-		//Replace with a UIWebView with user-interaction disabled?
-	}
+
+	ShareToRedditController *str = self.rootCon;
+
+	if( str.image )
+		self.imgView.image = str.image;
+	else if( str.url.previewImage )
+		self.imgView.image = str.url.previewImage;
+	else
+		self.imgView.image = [UIImage imageNamed:@"ShareToReddit_placeholder"];
 
 	[sesh loginLastUser];
 
@@ -151,8 +147,9 @@
 {
 	STRSubmitController *submit = [[STRSubmitController alloc] initWithSession:sesh];
 
+	//One of these will be set, the other nil
 	submit.postImage = self.rootCon.image;
-//	submit.postURL = [NSURL URLWithString:@"http://imgur.com/H6itLWl"];
+	submit.postURL = self.rootCon.url;
 
 	submit.postTitle = self.postTitle.text;
 	submit.subreddit = self.subreddit;

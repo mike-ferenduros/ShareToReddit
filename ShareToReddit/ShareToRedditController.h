@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSURL+ShareToReddit.h"
 #import "STRSession.h"
 #import "STRSubredditController.h"
+
+
 
 @class ShareToRedditController;
 
@@ -27,6 +30,11 @@
 
 - (id)init;
 - (void)closeWithError:(NSError*)err;
+
++ (NSString*)imgurClientID;
++ (void)setImgurClientID:(NSString*)clientID;
++ (NSString*)mashapeKey;
++ (void)setMashapeKey:(NSString*)key;
 
 //The following must be set BEFORE the view-controller is presented.
 

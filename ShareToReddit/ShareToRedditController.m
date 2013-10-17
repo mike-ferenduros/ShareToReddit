@@ -8,10 +8,20 @@
 
 #import "ShareToRedditController.h"
 #import "STRComposeController.h"
+#import "NSURL+ShareToReddit.h"
 
 
 
 @implementation ShareToRedditController
+
+static NSString *mashapeKey = nil;
+static NSString *imgurClientID = nil;
+
++ (NSString*)imgurClientID							{ return imgurClientID; }
++ (NSString*)mashapeKey								{ return mashapeKey; }
++ (void)setImgurClientID:(NSString*)clientID		{ imgurClientID = clientID; }
++ (void)setMashapeKey:(NSString*)key				{ mashapeKey = key; }
+
 
 - (id)init
 {

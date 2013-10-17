@@ -36,17 +36,22 @@
 	return [UIImage imageNamed:@"reddit7"];
 }
 
-
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
 {
 	if( ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) )
 		return NO;
 
-	//We can do something with a UIImage.
-	//We only use the first useful thing we come across
+	BOOL haveImgur = ShareToRedditController.imgurClientID != nil;
+
+	//We can do something with either a UIImage or a NSURL. If both are present, first item in array is used.
+
 	for( id item in activityItems )
 	{
-		if( [item isKindOfClass:[UIImage class]] )
+		if( haveImgur && [item isKindOfClass:[UIImage class]] )
+		{
+			return YES;
+		}
+		else if( [item isKindOfClass:[NSURL class]] )
 		{
 			return YES;
 		}
@@ -64,12 +69,18 @@
 	ShareToRedditController *vc = [[ShareToRedditController alloc] init];
 	vc.delegate = self;
 
+	BOOL haveImgur = ShareToRedditController.imgurClientID != nil;
+
 	for( id item in items )
 	{
-		if( [item isKindOfClass:[UIImage class]] )
+		if( [item isKindOfClass:[NSURL class]] )
+		{
+			vc.url = (NSURL*)item;
+			break;
+		}
+		else if( haveImgur && [item isKindOfClass:[UIImage class]] )
 		{
 			vc.image = (UIImage*)item;
-			break;
 		}
 	}
 
